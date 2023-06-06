@@ -1,0 +1,3 @@
+#!/bin/bash
+# Compile the Python script using the `compileall` module with the -b flag
+python3 -m compileall -b "$pyfile"
