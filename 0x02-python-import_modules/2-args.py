@@ -1,11 +1,15 @@
 #!/usr/bin/python3
+
 if __name__ == "__main__":
+
     import sys
-    arguments = sys.argv[1:]  # Exclude the script name from arguments
-    num = len(arguments)  # Use len(arguments) instead of len(sys.argv) - 1
-    print("{} {}:".format(num, 'argument' if num == 1 else 'arguments'))
-    i = 0
-    while num > 0:
-        print("{}: {}".format(i + 1, arguments[i]))
-        i += 1
-        num -= 1
+
+    num_args = len(sys.argv) - 1
+    if num_args == 0:
+        print("0 arguments.")
+    elif num_args == 1:
+        print("1 argument:")
+    else:
+        print("{} arguments:".format(num_args))
+    for i in range(num_args):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))
