@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    for 'c' or 'C' in my_string:
-        my_string.remove(c)
+    new_word = ''
+    for word in my_string:
+        if word != 'c' and word != 'C':
+            new_word += word
+    return new_word
