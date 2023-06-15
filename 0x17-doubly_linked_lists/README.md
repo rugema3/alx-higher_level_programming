@@ -72,7 +72,7 @@ Write a function that deletes the node at index index of a dlistint_t linked lis
 
 <h3><b>9. Crackme4</b></h3>
 <b>#advanced</b>
-Find the password for [crackme4.](https://github.com/alx-tools/0x17.c)
+Find the password for [crackme4](https://github.com/alx-tools/0x17.c)
 <ul>
 <li>Save the password in the file 100-password </li>
 <li>Your file should contain the exact password, no new line, no extra space</li>
@@ -89,7 +89,7 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 </ul>
 <h3><b>11. crackme5 </b></h3>
 <b>#advanced</b>
-Write a keygen for [crackme5.](https://github.com/alx-tools/0x17.c)
+Write a keygen for [crackme5](https://github.com/alx-tools/0x17.c)
 <ul>
 <li>Usage of the crackme: ./crackme5 username key </li>
 <li>The crackme will segfault if you do not enter the correct key for the user</li>
