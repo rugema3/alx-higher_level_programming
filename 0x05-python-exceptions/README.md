@@ -3,8 +3,8 @@
 <h1><b>Resources</b></h1>
 <h3><b>Read or Watch</b></h3>
 <ul>
+<li><a href="https://intranet.alxswe.com/rltoken/Yj7sDOzmKwICSHr7WEAW3A">Errors and Exceptions</a> </li>
 <li>
-<a href="https://intranet.alxswe.com/rltoken/Yj7sDOzmKwICSHr7WEAW3A">Errors and Exceptions</a>
 <a href="https://intranet.alxswe.com/rltoken/xASzXarhF1sBhzYkJ14LvQ">Learn to Program 11 Static & Exception Handling (starting at minute 7)</a>
 </li>
 </ul>
@@ -54,6 +54,8 @@ File: 0-safe_print_list.py
   
 <h2><b>1. Safe printing of an integers list</b></b>
 mandatory
+
+<pre>
 Write a function that prints an integer with "{:d}".format().
 
 Prototype: def safe_print_integer(value):
@@ -143,9 +145,12 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 2-safe_print_list_integers.py
+</pre>
   
 <h2><b>3. Integers division with debug</b></h2>
 mandatory
+
+<pre>
 Write a function that divides 2 integers and prints the result.
 
 Prototype: def safe_print_division(a, b):
@@ -180,6 +185,7 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 3-safe_print_division.py
+</pre>
   
 <h2><b>4. Divide a list</b></h2>
 mandatory
