@@ -12,7 +12,7 @@
 <h1><b>Tasks</b></h1>
 
 <pre>
-0. Safe list printing
+<h2><b>0. Safe list printing</b></h2>
 mandatory
 Write a function that prints x elements of a list.
 
@@ -52,7 +52,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 0-safe_print_list.py
   
-1. Safe printing of an integers list
+<h2><b>1. Safe printing of an integers list</b></b>
 mandatory
 Write a function that prints an integer with "{:d}".format().
 
@@ -144,7 +144,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 2-safe_print_list_integers.py
   
-3. Integers division with debug
+<h2><b>3. Integers division with debug</b></h2>
 mandatory
 Write a function that divides 2 integers and prints the result.
 
@@ -181,7 +181,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 3-safe_print_division.py
   
-4. Divide a list
+<h2><b>4. Divide a list</b></h2>
 mandatory
 Write a function that divides element by element 2 lists.
 
@@ -228,7 +228,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 4-list_division.py
   
-5. Raise exception
+<h2><b>5. Raise exception</b></h2>
 mandatory
 Write a function that raises a type exception.
 
@@ -252,7 +252,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 5-raise_exception.py
   
-6. Raise a message
+<h2><b>6. Raise a message</b></h2>
 mandatory
 Write a function that raises a name exception with a message.
 
@@ -276,7 +276,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 6-raise_exception_msg.py
   
-7. Safe integer print with error message
+<h2><b>7. Safe integer print with error message</b></h2>
 #advanced
 Write a function that prints an integer.
 
@@ -324,7 +324,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 100-safe_print_integer_err.py
   
-8. Safe function
+<h2><b>8. Safe function</b></h2>
 #advanced
 Write a function that executes a function safely.
 
@@ -383,7 +383,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 101-safe_function.py
   
-9. ByteCode -> Python #4
+<h2><b>9. ByteCode -> Python #4 </b></h2>
 #advanced
 Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
 
@@ -448,7 +448,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
 File: 102-magic_calculation.py
   
-10. CPython #2: PyFloatObject
+10.<h2><b> CPython #2: PyFloatObject</b></h2>
 #advanced
 Create three C functions that print some basic info about Python lists, Python bytes an Python float objects.
 
