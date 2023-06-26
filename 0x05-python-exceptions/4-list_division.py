@@ -4,14 +4,14 @@ def list_division(my_list_1, my_list_2, list_length):
     try:
         for i in range(list_length):
             try:
-                dividend = my_list_1[i]
-                divisor = my_list_2[i]
-                if not isinstance(dividend, (int, float)) or \
-                   not isinstance(divisor, (int, float)):
+                numerator = my_list_1[i]
+                denominator = my_list_2[i]
+                if not isinstance(numerator, (int, float)) or \
+                   not isinstance(denominator, (int, float)):
                     raise TypeError("wrong type")
-                if divisor == 0:
+                if denominator == 0:
                     raise ZeroDivisionError("division by 0")
-                result.append(dividend / divisor)
+                result.append(numerator / denominator)
             except ZeroDivisionError:
                 print("division by 0")
                 result.append(0)
