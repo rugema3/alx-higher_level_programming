@@ -50,9 +50,9 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 0-safe_print_list.py
+File:<a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py"> 0-safe_print_list.py</a>
   
-<h2><b>1. Safe printing of an integers list</b></b>
+<h2><b>1. Safe printing of an integers list</b></h2>
 mandatory
 
 <pre>
@@ -95,8 +95,8 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 1-safe_print_integer.py
-  
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py"> 1-safe_print_integer.py</a> 
+ 
 2. Print and count integers
 mandatory
 Write a function that prints the first x elements of a list and only integers.
@@ -144,7 +144,8 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 2-safe_print_list_integers.py
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py">2-safe_print_list_integers.py</a>
+
 </pre>
   
 <h2><b>3. Integers division with debug</b></h2>
@@ -184,7 +185,8 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 3-safe_print_division.py
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py">3-safe_print_division.py</a>
+
 </pre>
   
 <h2><b>4. Divide a list</b></h2>
@@ -232,7 +234,7 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 4-list_division.py
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/4-list_division.py">4-list_division.py</a>
   
 <h2><b>5. Raise exception</b></h2>
 mandatory
@@ -256,7 +258,7 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 5-raise_exception.py
+File:<a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py"> 5-raise_exception.py</a>
   
 <h2><b>6. Raise a message</b></h2>
 mandatory
@@ -280,7 +282,7 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 6-raise_exception_msg.py
+File:<a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py"> 6-raise_exception_msg.py</a>
   
 <h2><b>7. Safe integer print with error message</b></h2>
 #advanced
@@ -328,7 +330,7 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 100-safe_print_integer_err.py
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/100-safe_print_integer_err.py">100-safe_print_integer_err.py</a>
   
 <h2><b>8. Safe function</b></h2>
 #advanced
@@ -387,7 +389,7 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 101-safe_function.py
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/101-safe_function.py">101-safe_function.py</a>
   
 <h2><b>9. ByteCode -> Python #4 </b></h2>
 #advanced
@@ -452,7 +454,7 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 102-magic_calculation.py
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/102-magic_calculation.py">102-magic_calculation.py</a>
   
 10.<h2><b> CPython #2: PyFloatObject</b></h2>
 #advanced
@@ -667,7 +669,7 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x05-python-exceptions
-File: 103-python.c
+File: <a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x05-python-exceptions/103-python.c">103-python.c</a>
 
 </pre>
 
