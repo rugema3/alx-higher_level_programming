@@ -1,41 +1,37 @@
 #!/usr/bin/python3
 
-"""Define a class Square"""
+"""This module defines a Square class."""
 
 
 class Square:
     """
-    Representing a Square.
+    Represents a square.
 
     Attributes:
-    - size: The size of the square.
-    - position: The position of the square.
+    - size (int): The size of the square.
+    - position (tuple): The position of the square.
 
     Methods:
     - __init__(self, size=0, position=(0, 0)): Initializes a Square object.
-    - size: Getter method for the size attribute.
-    - size.setter: Setter method for the size attribute.
-    - position: Getter method for the position attribute.
-    - position.setter: Setter method for the position attribute.
     - area(self): Calculates and returns the area of the square.
-    - my_print(self): Prints the square using '#' based on the size
-      and position of the square.
+    - my_print(self): Prints the square using '#' based on the size and
+                      position of the square.
     """
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Initialize a Square.
+        Initializes a Square object.
 
         Args:
         - size (int): The size of the square.
         - position (tuple): The position of the square as a tuple of
-          two positive integers (x, y).
+                            two positive integers (x, y).
 
         Raises:
         - TypeError: If size is not an integer, or if position is not a
-          tuple of two positive integers.
+                     tuple of two positive integers.
         - ValueError: If size is less than 0, or if position contains
-          negative integers.
+                      negative integers.
         """
         self.size = size
         self.position = position
@@ -74,8 +70,8 @@ class Square:
         Getter method for the position attribute.
 
         Returns:
-        - tuple: The position of the square as a tuple of two
-          positive integers (x, y).
+        - tuple: The position of the square as a tuple of
+                 two positive integers (x, y).
         """
         return self.__position
 
@@ -85,16 +81,16 @@ class Square:
         Setter method for the position attribute.
 
         Args:
-        - value (tuple): The new position value as a tuple of
-          two positive integers (x, y).
+        - value (tuple): The new position value as a tuple of two positive
+                         integers (x, y).
 
         Raises:
         - TypeError: If value is not a tuple of two positive integers.
         """
         if not isinstance(value, tuple) or len(value) != 2 or \
            not all(isinstance(coord, int) and coord >= 0 for coord in value):
-            raise TypeError("position must be a tuple of two positive"
-                            "integers")
+            raise TypeError("position must be a tuple of "
+                            "two positive integers")
         self.__position = value
 
     def area(self):
@@ -108,8 +104,8 @@ class Square:
 
     def my_print(self):
         """
-        Prints the square using '#' based on the size and
-        position of the square.
+        Prints the square using '#' based on the size and position of
+        the square.
         """
         if self.__size == 0:
             print()
