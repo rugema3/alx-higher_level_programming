@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 """A function that divides a matrix"""
+
+
 def matrix_divided(matrix, div):
     # Check if matrix is a list of lists
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not isinstance(matrix, list) or not all(isinstance(row,
+       list) for row in matrix):
+        raise TypeError("matrix must be a matrix (list of lists) of"
+                        "integers/floats")
 
     # Check if all rows have the same size
     row_sizes = [len(row) for row in matrix]
@@ -28,4 +32,3 @@ def matrix_divided(matrix, div):
         divided_matrix.append(divided_row)
 
     return divided_matrix
-
