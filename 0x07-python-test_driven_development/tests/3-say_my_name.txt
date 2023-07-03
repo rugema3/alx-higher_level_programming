@@ -1,0 +1,40 @@
+"""
+This document explains how the function say_my_name will work.
+It will check different cases to make sure we cover most of 
+the edge cases.
+
+Cases:
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+ 
+>>> say_my_name("Alex", "Rugema")
+My name is Alex Rugema
+
+
+At least an argument must be given.
+
+>>> say_my_name()
+Traceback (most recent call last):
+...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+
+#parsing an integer
+>>> say_my_name(3)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+parsing a dictionary.
+>>> say_my_name({'Rugema': 76, 'Alex': 89})
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+parsing a list.
+>>> say_my_name([[2,4,5], ['robert', 'Son', 'Mugiraneza']])
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+"""
