@@ -11,12 +11,17 @@ def matrix_mul(m_a, m_b):
     Return: The product of two matrices.
     """
     if not isinstance(m_a, list) or not isinstance(m_b, list):
-        raise TypeError("m_a must be a list or m_b must be a list")
+        raise TypeError("m_a must be a list" if not isinstance(m_a, list) else
+                        "m_b must be a list")
 
+    # Checking for list of lists
     if not all(isinstance(row, list) for row in m_a) or \
             not all(isinstance(row, list) for row in m_b):
-        raise TypeError("m_a must be a list of lists or "
-                        "m_b must be a list of lists")
+        raise TypeError(
+            "m_a must be a list of lists"
+            if not all(isinstance(row, list) for row in m_a)
+            else "m_b must be a list of lists"
+        )
     if not m_a or not m_b:
         raise ValueError("m_a can't be empty" if not m_a else "m_b "
                          "can't be empty")
@@ -36,8 +41,8 @@ def matrix_mul(m_a, m_b):
 
     if any(len(row) != cols1 for row in m_a) or \
             any(len(row) != cols2 for row in m_b):
-        raise TypeError("each row of m_a must be of the same "
-                        "size or each row of m_b must be of the same size")
+        raise TypeError("each row of m_a must be of the same size or"
+                        "each row of m_b must be of the same size")
 
     if cols1 != rows2:
         raise ValueError("m_a and m_b can't be multiplied")

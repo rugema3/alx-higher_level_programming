@@ -1,0 +1,12 @@
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+>>> print(lazy_matrix_mul([2, 3,4], 2))
+Traceback (most recent call last):
+...
+TypeError: m_b must be a list
+
+
+>>> print(lazy_matrix_mul(3,[2,4]))
+Traceback (most recent call last):
+...
+TypeError: m_a must be a list
