@@ -1,0 +1,52 @@
+"""
+This module contains a function that multiplies
+two matrices A and B and return their product AB.
+
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+#Matrices of positive integers 2X2 matrices
+
+>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+[[7, 10], [15, 22]]
+
+
+
+#Matrices with negative integers, 3X3 matrices
+
+>>> print(matrix_mul([[3, -2, -1], [2, 6, -5], [7, 1, -8]], [[1, 9, 4], [0, 11, 5], [-3, 2, -7]]))
+[[6, 3, 9], [17, 74, 73], [31, 58, 89]]
+
+
+
+#Trying floats. The only didgit to be affected are those
+#that will be mulplied by the float.
+
+>>> print(matrix_mul([[3, -2, -1], [2, 6, -5], [7, 1, -8]], [[1, 9, 4], [0.5, 11, 5], [-3, 2, -7]]))
+[[5.0, 3, 9], [20.0, 74, 73], [31.5, 58, 89]]
+
+
+
+#parsing an empty matrix while the other matrix is provided.
+#m_a provided while m_b is empty.
+
+>>> print(matrix_mul([[2,3],[2,7]], []))
+Traceback (most recent call last):
+...
+ValueError: m_b can't be empty
+
+
+
+#Parsing an empty m_a matrix.
+
+>>> print(matrix_mul([], [[2,4], [3, 5]]))
+Traceback (most recent call last):
+...
+ValueError: m_a can't be empty
+
+
+#Testing when one of the elements is not an integer or float.
+
+>>> print(matrix_mul([[2, 'b'], [2,4]], [[2,3], [3,6]]))
+Traceback (most recent call last):
+...
+TypeError: m_a should contain only integers or floats
