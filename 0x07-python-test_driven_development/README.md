@@ -284,7 +284,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x07-python-test_driven_development
 File: 5-text_indentation.py, tests/5-text_indentation.txt
   
-5. Max integer - Unittest
+<h3><b>5. Max integer - Unittest</b></h3>
 mandatory
 Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
 
@@ -346,7 +346,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x07-python-test_driven_development
 File: tests/6-max_integer_test.py
   
-6. Matrix multiplication
+<h3><b>6. Matrix multiplication</b></h3>
 #advanced
 Write a function that multiplies 2 matrices:
 
