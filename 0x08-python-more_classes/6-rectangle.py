@@ -3,15 +3,9 @@
 
 
 class Rectangle:
-    """
+    """This is an empty class called Rectangle."""
 
-    Represent a rectangle.
-
-    Attributes:
-    number_of_instances: the number of Rectangle instances.
-    """
-
-    number_of_instances = 0
+    number_of_instances = 0  # Initialize class attribute to 0
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle instance.
@@ -22,6 +16,7 @@ class Rectangle:
         """
         self.__width = width
         self.__height = height
+        Rectangle.number_of_instances += 1  # Increment class attribute
 
     @property
     def width(self):
@@ -75,8 +70,13 @@ class Rectangle:
         """
         rectangle = "Rectangle(" + str(self.__width)
         rectangle += ", " + str(self.__height) + ")"
-        return (rectangle)
+        return rectangle
 
     def __del__(self):
-        """Print a message when an instance is deleted."""
+        """
+        Print a message when an instance is deleted.
+
+        And decrement class attribute.
+        """
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1  # Decrement class attribute
