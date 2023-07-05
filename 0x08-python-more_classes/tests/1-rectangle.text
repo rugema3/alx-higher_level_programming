@@ -1,0 +1,7 @@
+	1-rectangle module
+===========================================================
+
+Importing the 1-rectangle module
+	>>> Rectangle = __import__('1-rectangle').Rectangle
+
+
