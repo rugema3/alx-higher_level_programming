@@ -65,4 +65,6 @@ class Rectangle:
 
         This can be used to recreate a new instance.
         """
-        return f"Rectangle(width={self.__width}, height={self.__height})"
+        rectangle = "Rectangle(" + str(self.__width)
+        rectangle += ", " + str(self.__height) + ")"
+        return (rectangle)
