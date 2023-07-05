@@ -6,7 +6,14 @@ class Rectangle:
     """This is an empty class called Rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle instance."""
+        """Initialize a new Rectangle instance.
+
+        Args:
+            width (int): The width of the  rectangle.
+            height (int): The height of the rectangle.
+
+
+        """
         self.width = width
         self.height = height
 
