@@ -63,4 +63,14 @@ TypeError: b must be an integer
 >>> add_integer(-10.5, -2)
 -12
 
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(2000e1000, 1000e9990)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
 

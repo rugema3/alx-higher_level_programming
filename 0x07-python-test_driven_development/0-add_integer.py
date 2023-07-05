@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def add_integer(a, b=98):
     """Compute and returns the sum of two numbers
 
@@ -14,6 +16,7 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     elif not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
+
     else:
         a = int(a)
         b = int(b)
