@@ -21,9 +21,9 @@ def matrix_mul(m_a, m_b):
                          "can't be empty")
 
     rows1 = len(m_a)
-    cols1 = len(m_a[0])
+    cols1 = len(m_a[0]) if m_a else 0
     rows2 = len(m_b)
-    cols2 = len(m_b[0])
+    cols2 = len(m_b[0]) if m_b else 0
 
     if cols1 != rows2 or cols2 != rows1:
         raise ValueError("m_a and m_b can't be multiplied")
