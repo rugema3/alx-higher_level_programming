@@ -1,28 +1,27 @@
 """
 This module is testing the function that deals with indentation.
 The function will print a new line after each special character
-is encountered. The special characted iinclude: ., ? and :
+is encountered. The special characters include: ., ? and :
 
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-#testing a single word
+# Testing a single word
 >>> text_indentation("Rwanda?")
 Rwanda?
 
-#testing non-string
+# Testing non-string
 >>> text_indentation(23)
 Traceback (most recent call last):
 ...
 TypeError: The 'text' argument must be a string.
 
-#testing an empty argument
+# Testing an empty argument
 >>> text_indentation()
 Traceback (most recent call last):
     ...
 TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-
-#testing multiple words.
+# Testing multiple words
 >>> text_indentation("Hello.Rwanda,did you forget about about me? here I am.")
 Hello.
 <BLANKLINE>
@@ -30,6 +29,18 @@ Rwanda,did you forget about about me?
 <BLANKLINE>
 here I am.
 
+# Testing a string without any special characters
+>>> text_indentation("HolbertonSchool")
+HolbertonSchool
+
+
+# Testing a string with special characters at the beginning, middle, and end
+>>> text_indentation("Hello.Rwanda,did you forget about about me? here I am.")
+Hello.
+<BLANKLINE>
+Rwanda,did you forget about about me?
+<BLANKLINE>
+here I am.
 
 
 """
