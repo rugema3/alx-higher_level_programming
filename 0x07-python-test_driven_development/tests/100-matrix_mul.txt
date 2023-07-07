@@ -63,6 +63,7 @@ Case6: Testing when one of the elements is not an integer or float.
 	...
 	TypeError: m_a should contain only integers or floats
 
+
 Case7: Matrices with different sizes
 ...............................................................................
 
@@ -70,5 +71,16 @@ Case7: Matrices with different sizes
 	Traceback (most recent call last):
 	...
 	ValueError: m_a and m_b can't be multiplied
+
+
+Case8: Matrices with incompatible sizes:
+...............................................................................
+
+	>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2, 3], [4, 5, 6]]))
+	Traceback (most recent call last):
+	...
+	ValueError: m_a and m_b can't be multiplied
+
+
 
 """
