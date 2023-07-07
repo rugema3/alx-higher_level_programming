@@ -1,0 +1,52 @@
+	4-print_square module
+=========================================================================================
+
+	print_square(): a function that prints a square with the character #
+=========================================================================================
+
+Importing the Module:
+...........................................................
+	>>> print_square = __import__('4-print_square').print_square
+	
+CASES:
+
+Case1: Size is an integer:
+...........................................................
+	>>> print_square(2)
+	##
+	##
+
+
+Case2: Testing when the size is a float:
+...............................................................
+	>>> print_square(2.0)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+Case3: Testing when the size is not a number:
+...........................................................
+	>>> print_square('t')
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+Case4: Testing when the size is less that zero:
+...........................................................
+	>>> print_square(-2)
+	Traceback (most recent call last):
+	...
+	ValueError: size must be >= 0
+
+Case5: Testing with zero size:
+...........................................................
+	>>> print_square(0)
+	
+
+Case6: Testing zero arguments:
+...........................................................
+	>>> print_square()
+	Traceback (most recent call last):
+	...
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
