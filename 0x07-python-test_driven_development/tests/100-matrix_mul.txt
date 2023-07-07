@@ -82,8 +82,13 @@ Case8: Matrices with incompatible sizes:
 	ValueError: m_a and m_b can't be multiplied
 
 
-Case9: Matrices with empty rows
+Case9: Matrices with non-numeric elements
 ...............................................................................
+
+	>>> print(matrix_mul([[1, 2], [3, 'four']], [[1, 2], [3, 4]]))
+	Traceback (most recent call last):
+	...
+	TypeError: m_a should contain only integers or floats
 
 	
 
