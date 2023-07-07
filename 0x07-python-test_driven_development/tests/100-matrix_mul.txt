@@ -90,6 +90,13 @@ Case9: Matrices with non-numeric elements
 	...
 	TypeError: m_a should contain only integers or floats
 
+
+Case10: Matrices with zero as an element
+...............................................................................
+
+	>>> print(matrix_mul([[1, 0], [0, 2]], [[3, 4], [5, 0]]))
+	[[3, 4], [10, 0]]
+
 	
 
 
