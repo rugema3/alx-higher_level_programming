@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+"""3-say_my_name module."""
+
 
 def say_my_name(first_name, last_name=""):
     """
-    Function say_my_name that returns the first and last names
+    Represent Function say_my_name that returns the first and last names.
 
     Args:
     first_name(str): the first name to be returned.
