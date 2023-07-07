@@ -20,10 +20,13 @@ def matrix_mul(m_a, m_b):
         raise ValueError("m_a can't be empty" if not m_a else "m_b "
                          "can't be empty")
 
+    if any(not row for row in m_a) or any(not row for row in m_b):
+        raise ValueError("m_a and m_b cannot have empty rows")
+
     rows1 = len(m_a)
-    cols1 = len(m_a[0]) if m_a else 0
+    cols1 = len(m_a[0])
     rows2 = len(m_b)
-    cols2 = len(m_b[0]) if m_b else 0
+    cols2 = len(m_b[0])
 
     if cols1 != rows2 or cols2 != rows1:
         raise ValueError("m_a and m_b can't be multiplied")
