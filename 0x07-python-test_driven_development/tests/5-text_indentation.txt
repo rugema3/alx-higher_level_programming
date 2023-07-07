@@ -30,8 +30,10 @@ Rwanda,did you forget about about me?
 here I am.
 
 # Testing a string without any special characters
->>> text_indentation("HolbertonSchool")
-HolbertonSchool
+>>> text_indentation("Holberton.School")
+Holberton.
+<BLANKLINE>
+School
 
 
 # Testing a string with special characters at the beginning, middle, and end
