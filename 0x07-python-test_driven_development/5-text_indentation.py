@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""5-text_indentation module."""
+
 
 def text_indentation(text):
     """
@@ -28,3 +30,4 @@ def text_indentation(text):
     if lines[-1] == '':
         lines.pop()  # Remove the last blank line if it's empty
     print('\n\n'.join(lines))
+
