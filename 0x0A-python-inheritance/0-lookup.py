@@ -4,7 +4,7 @@
 
 def lookup(obj):
     """Define lookup method.
-    
+
     Args:
     obj: object to be parsed as an argument.
 
