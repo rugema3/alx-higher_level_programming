@@ -10,7 +10,6 @@ def is_same_class(obj, a_class):
     a_class: a class to compare if an object belongs to.
     Return: True if an object belongs to class otherwise False.
     """
-
     if type(obj) == a_class:
         return True
     else:
