@@ -1,0 +1,80 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+7-base_geometry module.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+=====================================================================
+importing the module:
+=====================================================================
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+=====================================================================
+Case1: checking the area method.
+=====================================================================
+
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):
+    	...
+        Exception: area() is not implemented
+
+
+
+=====================================================================
+Case2: Parsing 1 argument to area
+=====================================================================
+
+	>>> a = BaseGeometry()
+	>>> a.area(5)
+	Traceback (most recent call last):
+	...
+	TypeError: area() takes 1 positional argument but 2 were given
+
+
+
+=====================================================================
+Case3: provided tests.
+=====================================================================
+	
+	>>> bg.integer_validator("name", "John")
+	Traceback (most recent call last):
+	...
+	TypeError: name must be an integer
+
+
+	>>> bg.integer_validator("age", 0)
+	Traceback (most recent call last):
+	...
+	ValueError: age must be greater than 0
+
+
+	>>> bg.integer_validator("distance", -4)
+	Traceback (most recent call last):
+	...
+	ValueError: distance must be greater than 0
+
+
+=====================================================================
+Case4: fewer arguments
+=====================================================================
+
+	>>> bg = BaseGeometry()
+    	>>> bg.integer_validator("Rugema")
+    	Traceback (most recent call last):
+    	...
+    	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+
+=====================================================================
+Case5: Checking when we have no arguments
+=====================================================================
+    
+	>>> a = BaseGeometry()
+    	>>> a.integer_validator()
+    	Traceback (most recent call last):
+    	...
+    	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
