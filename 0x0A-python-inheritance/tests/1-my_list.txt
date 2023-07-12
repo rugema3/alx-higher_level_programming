@@ -15,6 +15,8 @@ case 1: Create an instance and print the sorted list
 	>>> list1.print_sorted()
 	[-1, 0, 2, 4, 6, 12]
 
+
+
 ---------------------------------------------------------------------
 Case2: Create an empty instance and print the sorted list
 ---------------------------------------------------------------------
@@ -23,5 +25,12 @@ Case2: Create an empty instance and print the sorted list
 	>>> list2.print_sorted()
 	[]
 
+---------------------------------------------------------------------
+Case3: Create a list with non-integer types.
+---------------------------------------------------------------------
 
-
+	>>> list3 = MyList(['Alex', 'Rugema', 90, 23, -1])
+	>>> list3.print_sorted()
+	Traceback (most recent call last):
+	...
+	TypeError: '<' not supported between instances of 'int' and 'str'
