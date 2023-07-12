@@ -30,3 +30,13 @@ class Square(Rectangle):
             str: The string representation of the square.
         """
         return "[Square] {}/{}".format(self.__size, self.__size)
+
+    def area(self):
+        """
+        Calculate and return the area of the square.
+
+        Returns:
+            int: The calculated area of the square.
+        """
+        return self.__size ** 2
+
