@@ -4,7 +4,7 @@
 
 def is_kind_of_class(obj, a_class):
     """Define the function.
-    
+
     Description:
     This checks if an object belongs
     to a class or its subclasses.
