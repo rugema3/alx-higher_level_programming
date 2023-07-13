@@ -2,16 +2,16 @@
 
 <h1>Resources</h1>
 
-<a href="https://intranet.alxswe.com/rltoken/ct-bhZHBxfE-aHYQoAcscQ">inheritance</a>
-<a href="https://intranet.alxswe.com/rltoken/qq52YyYhDIbKBneA-u0PKw">Multiple Inheritance</a>
-<a href="https://intranet.alxswe.com/rltoken/RJVbH9PvRlwDkBxcTloVOQ">Inheritance in Python</a>
-<a href="">https://intranet.alxswe.com/rltoken/CFBGj9h1gP3eNLnEm2Ehhg>Learn to Program 10 : Inheritance Magic Methods</a>
+<li><a href="https://intranet.alxswe.com/rltoken/ct-bhZHBxfE-aHYQoAcscQ">inheritance</a></li>
+<li><a href="https://intranet.alxswe.com/rltoken/qq52YyYhDIbKBneA-u0PKw">Multiple Inheritance</a></li>
+<li><a href="https://intranet.alxswe.com/rltoken/RJVbH9PvRlwDkBxcTloVOQ">Inheritance in Python</a></li>
+<li><a href="">https://intranet.alxswe.com/rltoken/CFBGj9h1gP3eNLnEm2Ehhg>Learn to Program 10 : Inheritance Magic Methods</a></li>
 
 <h1>Tasks</h1>
 
 <pre>
 
-<b>0. Lookup</b>
+<h2><b>0. Lookup</b></h2>
 mandatory
 Write a function that returns the list of available attributes and methods of an object:
 
@@ -47,7 +47,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 0-lookup.py
    
-<b>1. My list</b>
+<h2><b>1. My list</b></h2>
 mandatory
 Write a class MyList that inherits from list:
 
@@ -79,7 +79,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 1-my_list.py, tests/1-my_list.txt
    
-<b>2. Exact same object</b>
+<h2><b>2. Exact same object</b></h2>
 mandatory
 Write a function that returns True if the object is exactly an instance of the specified class ; otherwise False.
 
@@ -108,7 +108,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 2-is_same_class.py
    
-<b>3. Same class or inherit from</b>
+<h2><b>3. Same class or inherit from</b></h2>
 mandatory
 Write a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False.
 
@@ -138,7 +138,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 3-is_kind_of_class.py
    
-<b>4. Only sub class of</b>
+<h2><b>4. Only sub class of</b></h2>
 mandatory
 Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.
 
@@ -168,7 +168,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 4-inherits_from.py
    
-<b>5. Geometry module</b>
+<h2><b>5. Geometry module</b></h2>
 mandatory
 Write an empty class BaseGeometry.
 
@@ -196,7 +196,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 5-base_geometry.py
    
-<b>6. Improve Geometry</b>
+<h2><b>6. Improve Geometry</b></h2>
 mandatory
 Write a class BaseGeometry (based on 5-base_geometry.py).
 
@@ -224,7 +224,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 6-base_geometry.py
    
-<b>7. Integer validator</b>
+<h2><b>7. Integer validator</b></h2>
 mandatory
 Write a class BaseGeometry (based on 6-base_geometry.py).
 
@@ -269,7 +269,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 7-base_geometry.py, tests/7-base_geometry.txt
    
-<b>8. Rectangle</b>
+<b2><b>8. Rectangle</b></h2>
 mandatory
 Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
 
@@ -309,7 +309,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 8-rectangle.py
    
-<b>9. Full rectangle</b>
+<h2><b>9. Full rectangle</b></h2>
 mandatory
 Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task based on 8-rectangle.py)
 
@@ -339,7 +339,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 9-rectangle.py
    
-<b>10. Square #1</b>
+<h2><b>10. Square #1</b></h2>
 mandatory
 Write a class Square that inherits from Rectangle (9-rectangle.py):
 
@@ -368,7 +368,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 10-square.py
    
-<b>11. Square #2</b>
+<h2><b>11. Square #2</b></h2>
 mandatory
 Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
 
@@ -398,7 +398,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 11-square.py
    
-<b>12. My integer</b>
+</h2><b>12. My integer</b></h2>
 #advanced
 Write a class MyInt that inherits from int:
 
@@ -426,7 +426,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 100-my_int.py
    
-<b>13. Can I?</b>
+<h2><b>13. Can I?</b></h2>
 #advanced
 Write a function that adds a new attribute to an object if it’s possible:
 
