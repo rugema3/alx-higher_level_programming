@@ -269,7 +269,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 7-base_geometry.py, tests/7-base_geometry.txt
    
-<b2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/8-rectangle.py">8. Rectangle</a></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/8-rectangle.py">8. Rectangle</a></h2>
 mandatory
 Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
 
