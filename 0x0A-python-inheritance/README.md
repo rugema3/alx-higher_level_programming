@@ -5,7 +5,7 @@
 <li><a href="https://intranet.alxswe.com/rltoken/ct-bhZHBxfE-aHYQoAcscQ">inheritance</a></li>
 <li><a href="https://intranet.alxswe.com/rltoken/qq52YyYhDIbKBneA-u0PKw">Multiple Inheritance</a></li>
 <li><a href="https://intranet.alxswe.com/rltoken/RJVbH9PvRlwDkBxcTloVOQ">Inheritance in Python</a></li>
-<li><a href="">https://intranet.alxswe.com/rltoken/CFBGj9h1gP3eNLnEm2Ehhg>Learn to Program 10 : Inheritance Magic Methods</a></li>
+<li><a href="https://intranet.alxswe.com/rltoken/CFBGj9h1gP3eNLnEm2Ehhg">Learn to Program 10 : Inheritance Magic Methods</a></li>
 
 <h1>Tasks</h1>
 
