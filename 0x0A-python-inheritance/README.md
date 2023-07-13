@@ -11,7 +11,7 @@
 
 <pre>
 
-<h2><b>0. Lookup</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/0-lookup.py">0. Lookup</a></b></h2>
 mandatory
 Write a function that returns the list of available attributes and methods of an object:
 
@@ -47,7 +47,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 0-lookup.py
    
-<h2><b>1. My list</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/1-my_list.py">1. My list</a></h2>
 mandatory
 Write a class MyList that inherits from list:
 
@@ -79,7 +79,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 1-my_list.py, tests/1-my_list.txt
    
-<h2><b>2. Exact same object</b></h2>
+<h2><a href"https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/2-is_same_class.py">2. Exact same object</a></h2>
 mandatory
 Write a function that returns True if the object is exactly an instance of the specified class ; otherwise False.
 
@@ -108,7 +108,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 2-is_same_class.py
    
-<h2><b>3. Same class or inherit from</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/3-is_kind_of_class.py">3. Same class or inherit from</a></h2>
 mandatory
 Write a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False.
 
@@ -138,7 +138,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 3-is_kind_of_class.py
    
-<h2><b>4. Only sub class of</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/4-inherits_from.py">4. Only sub class of</a></h2>
 mandatory
 Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.
 
@@ -168,7 +168,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 4-inherits_from.py
    
-<h2><b>5. Geometry module</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/5-base_geometry.py">5. Geometry module</a></h2>
 mandatory
 Write an empty class BaseGeometry.
 
@@ -196,7 +196,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 5-base_geometry.py
    
-<h2><b>6. Improve Geometry</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/6-base_geometry.py">6. Improve Geometry</a></h2>
 mandatory
 Write a class BaseGeometry (based on 5-base_geometry.py).
 
@@ -224,7 +224,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 6-base_geometry.py
    
-<h2><b>7. Integer validator</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/7-base_geometry.py">7. Integer validator</a></h2>
 mandatory
 Write a class BaseGeometry (based on 6-base_geometry.py).
 
@@ -269,7 +269,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 7-base_geometry.py, tests/7-base_geometry.txt
    
-<b2><b>8. Rectangle</b></h2>
+<b2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/8-rectangle.py">8. Rectangle</a></h2>
 mandatory
 Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
 
@@ -309,7 +309,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 8-rectangle.py
    
-<h2><b>9. Full rectangle</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/9-rectangle.py">9. Full rectangle</a></h2>
 mandatory
 Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task based on 8-rectangle.py)
 
@@ -339,7 +339,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 9-rectangle.py
    
-<h2><b>10. Square #1</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/10-square.py">10. Square #1</a></h2>
 mandatory
 Write a class Square that inherits from Rectangle (9-rectangle.py):
 
@@ -368,7 +368,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 10-square.py
    
-<h2><b>11. Square #2</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/11-square.py">11. Square #2</a></h2>
 mandatory
 Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
 
@@ -398,7 +398,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 11-square.py
    
-</h2><b>12. My integer</b></h2>
+</h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/100-my_int.py">12. My integer</a></h2>
 #advanced
 Write a class MyInt that inherits from int:
 
@@ -426,7 +426,7 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x0A-python-inheritance
 File: 100-my_int.py
    
-<h2><b>13. Can I?</b></h2>
+<h2><a href="https://github.com/rugema3/alx-higher_level_programming/blob/main/0x0A-python-inheritance/101-add_attribute.py">13. Can I?</a></h2>
 #advanced
 Write a function that adds a new attribute to an object if it’s possible:
 
