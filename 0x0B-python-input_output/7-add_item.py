@@ -3,15 +3,18 @@
 import sys
 import json
 
+
 def save_to_json_file(data, filename):
     """Save data to a JSON file."""
     with open(filename, 'w') as file:
         json.dump(data, file)
 
+
 def load_from_json_file(filename):
     """Load data from a JSON file."""
     with open(filename, 'r') as file:
         return json.load(file)
+
 
 if __name__ == "__main__":
     filename = "add_item.json"
