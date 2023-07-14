@@ -110,3 +110,45 @@ Case8: Testing with a list
 	...
 	TypeError: age must be an integer
 
+
+
+=====================================================================
+Case9:Other cases 
+=====================================================================
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", 1)
+
+
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", (4,))
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age",True)
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", {3,4})
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", None)
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+
+	
