@@ -95,8 +95,11 @@ class Rectangle(Base):
 
     def display(self):
         """Define display method."""
-        for _ in range(self.__height):
-            print("#" * self.__width)
+        for _ in range(self.y):
+            print()  # Print empty lines for the y offset
+
+        for _ in range(self.height):
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """Define the string representation of the Rectangle."""
