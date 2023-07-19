@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 import unittest
 from models.rectangle import Rectangle
-from tests.test_models.test_base import TestBase  # Importing tests of the base class here.
+from tests.test_models.test_base import TestBase
+
 
 class TestRectangle(unittest.TestCase):
     """Test case class for testing the Rectangle class."""
-    
+
     def test_attributes_present(self):
         """Test when all arguments are present."""
         b = Rectangle(4, 5, 10, 20, 1)
@@ -14,7 +15,6 @@ class TestRectangle(unittest.TestCase):
         self.assertIsNotNone(b.x)
         self.assertIsNotNone(b.y)
         self.assertIsNotNone(b.id)
-
 
     def test_attribute_absent(self):
         """Test when no argument provided at all."""
@@ -58,7 +58,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_excess_arguments(self):
         """Test excess arguments.
-        We are testing when the arguments are more than 5. 
+        We are testing when the arguments are more than 5.
         We are only allowed to work with 5 arguments according
         to the definition of our class.
         """
@@ -72,7 +72,6 @@ class TestRectangle(unittest.TestCase):
 
         with self.assertRaises(NameError):
             Rectangle(width, 3, 5, 5)
-
 
     def test_non_int_height(self):
         """Test when the height value is not an integer."""
@@ -135,12 +134,10 @@ class TestRectangle(unittest.TestCase):
         r.width = 20
         self.assertEqual(20, r.width)
 
-
     def test_height_getter(self):
         """Test the height getter."""
         r = Rectangle(5, 7, 7, 5, 1)
         self.assertEqual(7, r.height)
-
 
     def test_height_setter(self):
         """Test the height setter."""
@@ -170,9 +167,39 @@ class TestRectangle(unittest.TestCase):
         r.y = 20
         self.assertEqual(20, r.y)
 
+    """
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Testing the area() method.
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    """
 
+    def test_area_single_arg(self):
+        """Test area with one argument.
+
+        Note that area() methods takes no argument.
+        """
+        r = Rectangle(2, 3, 4, 4, 5)
+        with self.assertRaises(TypeError):
+            r.area(2)
+
+    def test_area_normal(self):
+        """Test the area for regular numbers."""
+        b = Rectangle(8, 30, 3, 1, 3)
+        self.assertEqual(240, b.area())
+
+    def test_area_altered_args(self):
+        """Test the area of altered values for height and width."""
+        b = Rectangle(8, 30, 2)
+        b.width = 2
+        b.height = 15
+        self.assertEqual(30, b.area())
+
+    def test_area_large(self):
+        """Test area with large values of width and height."""
+        r = Rectangle(123456789, 987654321, 2, 3, 1)
+        expected_area = 123456789 * 987654321
+        self.assertEqual(expected_area, r.area())
 
 
 if __name__ == '__main__':
     unittest.main()
-

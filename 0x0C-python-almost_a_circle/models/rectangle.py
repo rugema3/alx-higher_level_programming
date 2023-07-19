@@ -36,26 +36,26 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """Define getter for private attribute width."""
+        """Define getter for private attribute width"""
         if not isinstance(value, int):
-            raise TypeError("Width must be an integer.")
+            raise TypeError("width must be an integer")
         elif value <= 0:
-            raise ValueError("Width must be greater than zero.")
+            raise ValueError("Width must be greater than zero")
         else:
             self.__width = value
 
     @property
     def height(self):
-        """Define the getter for private attribute height."""
+        """Define the getter for private attribute height"""
         return self.__height
 
     @height.setter
     def height(self, value):
         """Define the setter for private attribute height."""
         if not isinstance(value, int):
-            raise TypeError("Height must be an integer.")
+            raise TypeError("Height must be an integer")
         elif value <= 0:
-            raise ValueError("Height must be greater than zero.")
+            raise ValueError("Height must be greater than zero")
         else:
             self.__height = value
 
@@ -68,9 +68,9 @@ class Rectangle(Base):
     def x(self, value):
         """Define setter for private attribute x."""
         if not isinstance(value, int):
-            raise TypeError("x must be an integer.")
+            raise TypeError("x must be an integer")
         elif value < 0:
-            raise ValueError("x must be >= 0.")
+            raise ValueError("x must be >= 0")
         else:
             self.__x = value
 
@@ -83,8 +83,12 @@ class Rectangle(Base):
     def y(self, value):
         """Define the setter for private attribute."""
         if not isinstance(value, int):
-            raise TypeError("y must be an integer.")
+            raise TypeError("y must be an integer")
         elif value < 0:
-            raise ValueError("y must be >= 0.")
+            raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def area(self):
+        """Define area method."""
+        return self.__width * self.__height

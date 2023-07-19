@@ -4,6 +4,7 @@
 import unittest
 from models.base import Base
 
+
 class TestBase(unittest.TestCase):
     """
     Test case class for testing the Base class.
@@ -47,6 +48,6 @@ class TestBase(unittest.TestCase):
         self.assertEqual(b2.id, 2)
         self.assertEqual(b3.id, 3)
 
+
 if __name__ == "__main__":
     unittest.main()
-
