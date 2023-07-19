@@ -229,6 +229,28 @@ class TestRectangle(unittest.TestCase):
             r.display()
             self.assertEqual(fake_output.getvalue().strip(), expected_output)
 
+    def test_str_with_custom_id(self):
+        """Test __str__ method with a custom id."""
+        r = Rectangle(4, 5, 1, 2, 42)
+        expected_str = "[Rectangle] (42) 1/2 - 4/5"
+        self.assertEqual(str(r), expected_str)
+
+    def test_str_with_zero_width_or_height(self):
+        """Test __str__ method with width or height set to zero."""
+        with self.assertRaises(ValueError):
+            Rectangle(0, 5)
+
+        with self.assertRaises(ValueError):
+            Rectangle(5, 0)
+
+    def test_str_with_negative_x_and_y(self):
+        """Test __str__ method with negative x and y values."""
+        with self.assertRaises(ValueError):
+            Rectangle(4, 5, -1, 2)
+
+        with self.assertRaises(ValueError):
+            Rectangle(4, 5, 1, -2)
+
 
 if __name__ == '__main__':
     unittest.main()
