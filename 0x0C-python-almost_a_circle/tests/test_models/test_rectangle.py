@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 import unittest
+import os
+from unittest.mock import patch
+from io import StringIO
 from models.rectangle import Rectangle
 from tests.test_models.test_base import TestBase
 
@@ -199,6 +202,32 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(123456789, 987654321, 2, 3, 1)
         expected_area = 123456789 * 987654321
         self.assertEqual(expected_area, r.area())
+
+    """
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Tesing the display method.
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    """
+    def test_display_single_cell(self):
+        r = Rectangle(1, 1)
+        expected_output = '#'
+        with patch('sys.stdout', new=StringIO()) as fake_output:
+            r.display()
+            self.assertEqual(fake_output.getvalue().strip(), expected_output)
+
+    def test_display_larger_rectangle(self):
+        r = Rectangle(4, 3)
+        expected_output = '####\n####\n####'
+        with patch('sys.stdout', new=StringIO()) as fake_output:
+            r.display()
+            self.assertEqual(fake_output.getvalue().strip(), expected_output)
+
+    def test_display_rectangle_with_custom_shape(self):
+        r = Rectangle(3, 2)
+        expected_output = '###\n###'
+        with patch('sys.stdout', new=StringIO()) as fake_output:
+            r.display()
+            self.assertEqual(fake_output.getvalue().strip(), expected_output)
 
 
 if __name__ == '__main__':

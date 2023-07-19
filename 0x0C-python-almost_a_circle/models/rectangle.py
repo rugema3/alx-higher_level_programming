@@ -36,7 +36,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """Define getter for private attribute width"""
+        """Define getter for private attribute width."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -46,7 +46,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Define the getter for private attribute height"""
+        """Define the getter for private attribute height."""
         return self.__height
 
     @height.setter
@@ -92,3 +92,8 @@ class Rectangle(Base):
     def area(self):
         """Define area method."""
         return self.__width * self.__height
+
+    def display(self):
+        """Define display method."""
+        for _ in range(self.__height):
+            print("#" * self.__width)
