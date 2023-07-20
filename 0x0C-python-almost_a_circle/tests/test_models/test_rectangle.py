@@ -365,6 +365,36 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r.x, 3)
         self.assertEqual(r.y, 4)
 
+    """
+    =================================================================
+    Test the to_dictionary() method.
+    =================================================================
+    """
+    def test_return_type(self):
+        """Test if the return type will be a dictionary."""
+        r = Rectangle(1, 2, 3, 4, 5)
+        my_dict = r.to_dictionary()
+        self.assertIsInstance(my_dict, dict)
+
+    def test_dictionary_contents(self):
+        """Test the contents of the dictionary."""
+        r = Rectangle(10, 2, 1, 9, 1)
+        my_dict = r.to_dictionary()
+        expected_dict = {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}
+        self.assertDictEqual(my_dict, expected_dict)
+
+    def test_independence_from_original_object(self):
+        """Test if the returned dictionary is independent of the orig obj."""
+        r = Rectangle(5, 10, 2, 3, 1)
+        old_dict = r.to_dictionary()
+
+        # Modify the original object.
+        r.width = 15
+        r.height = 20
+        # Verify that the previously obtained dictionary remains unchanged
+        expected = {'x': 2, 'y': 3, 'id': 1, 'height': 10, 'width': 5}
+        self.assertDictEqual(old_dict, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
