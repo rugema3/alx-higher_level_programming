@@ -229,6 +229,12 @@ class TestRectangle(unittest.TestCase):
             r.display()
             self.assertEqual(fake_output.getvalue().strip(), expected_output)
 
+    """
+    =================================================================
+    Test the __str__ method with different scenerios.
+    =================================================================
+    """
+
     def test_str_with_custom_id(self):
         """Test __str__ method with a custom id."""
         r = Rectangle(4, 5, 1, 2, 42)
@@ -250,6 +256,70 @@ class TestRectangle(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             Rectangle(4, 5, 1, -2)
+
+    """
+    =================================================================
+    Tests for the update method. Here we are testing different cases.
+    =================================================================
+    """
+
+    def test_update_with_valid_arguments(self):
+        """Test the update method with valid arguments."""
+        r = Rectangle(4, 5, 1, 2, 10)
+
+        # Call the update method with new attribute values
+        r.update(1, 8, 6, 3, 4)
+
+        # Check if the attributes are updated correctly
+        self.assertEqual(r.id, 1)
+        self.assertEqual(r.width, 8)
+        self.assertEqual(r.height, 6)
+        self.assertEqual(r.x, 3)
+        self.assertEqual(r.y, 4)
+
+    def test_update_with_partial_arguments(self):
+        """Test by updating some of the arguments while keeping others."""
+        r = Rectangle(4, 5, 1, 2, 10)
+
+        # Call the update method with fewer arguments
+        r.update(3, 9)
+
+        # Check if the corresponding attributes are updated correctly
+        self.assertEqual(r.id, 3)
+        self.assertEqual(r.width, 9)
+        # Other attributes (height, x, y) should remain unchanged
+        self.assertEqual(r.height, 5)
+        self.assertEqual(r.x, 1)
+        self.assertEqual(r.y, 2)
+
+    def test_update_with_extra_arguments(self):
+        """Test the update method with excess arguments."""
+        r = Rectangle(4, 5, 1, 2, 10)
+
+        # Call the update method with extra arguments beyond the required ones
+        r.update(7, 11, 9, 8, 10, 12, 13)
+
+        # Check if the corresponding attributes are updated correctly
+        self.assertEqual(r.id, 7)
+        self.assertEqual(r.width, 11)
+        self.assertEqual(r.height, 9)
+        self.assertEqual(r.x, 8)
+        self.assertEqual(r.y, 10)
+        # Extra arguments should be ignored
+
+    def test_update_without_arguments(self):
+        """Call the method without any arguments."""
+        r = Rectangle(4, 5, 1, 2, 10)
+
+        # Call the update method without any arguments
+        r.update()
+
+        # Check if the attributes remain unchanged
+        self.assertEqual(r.id, 10)
+        self.assertEqual(r.width, 4)
+        self.assertEqual(r.height, 5)
+        self.assertEqual(r.x, 1)
+        self.assertEqual(r.y, 2)
 
 
 if __name__ == '__main__':
