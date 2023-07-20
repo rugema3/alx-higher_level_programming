@@ -44,6 +44,13 @@ class TestSquare(TestRectangle):
         s.update(id=10, size=4)
         self.assertEqual(s.__str__(), "[Square] (10) 7/8 - 4")
 
+    def test_square_to_dictionary_method(self):
+        """Test the to_dictionary method for the Square class."""
+        s = Square(5, 2, 3, 1)
+        my_dict = s.to_dictionary()
+        expected_dict = {'id': 1, 'x': 2, 'size': 5, 'y': 3}
+        self.assertDictEqual(my_dict, expected_dict)
+
 
 if __name__ == "__main__":
     unittest.main()
