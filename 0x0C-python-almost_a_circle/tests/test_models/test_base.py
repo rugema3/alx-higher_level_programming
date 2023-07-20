@@ -48,6 +48,29 @@ class TestBase(unittest.TestCase):
         self.assertEqual(b2.id, 2)
         self.assertEqual(b3.id, 3)
 
+    def test_to_json_string_empty_list(self):
+        """Test to_json_string with an empty list."""
+        result = Base.to_json_string([])
+        self.assertEqual(result, "[]")
+
+    def test_to_json_string_none_list(self):
+        """Test to_json_string with None as the list."""
+        result = Base.to_json_string(None)
+        self.assertEqual(result, "[]")
+
+    def test_to_json_string_single_dict(self):
+        """Test to_json_string with a list containing a single dictionary."""
+        data = [{"id": 1, "name": "Alice"}]
+        result = Base.to_json_string(data)
+        self.assertEqual(result, '[{"id": 1, "name": "Alice"}]')
+
+    def test_to_json_string_multiple_dicts(self):
+        """Test to_json_string with a list containing multiple dictionaries."""
+        data = [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]
+        result = Base.to_json_string(data)
+        expected = '[{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]'
+        self.assertEqual(result, expected)
+
 
 if __name__ == "__main__":
     unittest.main()
