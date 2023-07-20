@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Define test_square.
 
 This module defines the tests run on the Square class.
