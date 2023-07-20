@@ -321,6 +321,50 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r.x, 1)
         self.assertEqual(r.y, 2)
 
+    def test_update_with_key_value_arguments(self):
+        """Test the method with key_value arguments."""
+        r = Rectangle(2, 3, 4, 7, 10)
+
+        # Call the update method with key_value values.
+        r.update(width=12, height=2, x=1, y=3, id=5)
+
+        # checking if the arguments are updated accordingly.
+        self.assertEqual(r.width, 12)
+        self.assertEqual(r.height, 2)
+        self.assertEqual(r.x, 1)
+        self.assertEqual(r.y, 3)
+        self.assertEqual(r.id, 5)
+
+    def test_update_with_id_key_word_argument(self):
+        """Test with only id key_word argument."""
+        r = Rectangle(1, 2, 3, 4, 5)
+
+        # Call the update method with only id key-value.
+        r.update(id=10)
+
+        # Checking if the id is updated while the rest are unchanged.
+        self.assertEqual(r.id, 10)
+        self.assertEqual(r.width, 1)
+        self.assertEqual(r.height, 2)
+        self.assertEqual(r.x, 3)
+        self.assertEqual(r.y, 4)
+
+    def test_one_argument_with_positional(self):
+        """Test updating only the one attribute using positional arguments."""
+        r = Rectangle(1, 2, 3, 4, 5)
+
+        # Call the update method with only one positional argument.
+        r.update(10)
+
+        # check if the id has been updated since it is the first argument.
+        self.assertEqual(r.id, 10)
+
+        # Check if the other attributes remained unchanged.
+        self.assertEqual(r.width, 1)
+        self.assertEqual(r.height, 2)
+        self.assertEqual(r.x, 3)
+        self.assertEqual(r.y, 4)
+
 
 if __name__ == '__main__':
     unittest.main()
