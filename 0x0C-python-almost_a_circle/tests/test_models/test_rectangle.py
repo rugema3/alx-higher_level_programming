@@ -120,6 +120,14 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(ValueError):
             Rectangle(2, 3, 4, -3)
 
+    def test_x_or_y_non_integer(self):
+        """Test with non-integers."""
+        with self.assertRaises(TypeError):
+            Rectangle(2, 3, '3')
+
+        with self.assertRaises(TypeError):
+            Rectangle(2, 3, 4, '55')
+
     def test_custom_id(self):
         """Test a custom_id."""
         custom_id = 42
