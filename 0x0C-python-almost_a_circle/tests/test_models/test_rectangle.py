@@ -223,6 +223,19 @@ class TestRectangle(unittest.TestCase):
             r.display()
             self.assertEqual(fake_output.getvalue().strip(), expected_output)
 
+    def test_display_without_y_exists(self):
+        """Test case to check if display method without 'y' exists"""
+        r = Rectangle(1, 1)
+        expected_output = '#'
+        with patch('sys.stdout', new=StringIO()) as fake_output:
+            r.display()
+            self.assertEqual(fake_output.getvalue().strip(), expected_output)
+
+    def test_display_exists(self):
+        """Test case to check if display method exists"""
+        r = Rectangle(1, 1)
+        self.assertTrue(hasattr(r, "display"))
+
     def test_display_larger_rectangle(self):
         r = Rectangle(4, 3)
         expected_output = '####\n####\n####'
