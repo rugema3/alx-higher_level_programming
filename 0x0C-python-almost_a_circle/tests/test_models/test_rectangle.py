@@ -250,6 +250,11 @@ class TestRectangle(unittest.TestCase):
             r.display()
             self.assertEqual(fake_output.getvalue().strip(), expected_output)
 
+    def test_display_1_arg(self):
+        b = Rectangle(1, 2, 3, 4, 5)
+        with self.assertRaises(TypeError):
+            b.display(2)
+
     """
     =================================================================
     Test the __str__ method with different scenerios.
