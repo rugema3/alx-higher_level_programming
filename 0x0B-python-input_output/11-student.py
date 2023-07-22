@@ -46,4 +46,5 @@ class Student():
         """
         if isinstance(json, dict):
             self.__dict__.clear()
-            self.__dict__.update(json)
+            for key, value in json.items():
+                setattr(self, key, value)
