@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """100-matrix_mul module."""
 
-
 def matrix_mul(m_a, m_b):
     """
     matrix_mul: this function multiplies two matrices.
@@ -17,8 +16,10 @@ def matrix_mul(m_a, m_b):
                         "m_b must be a list")
 
     if not m_a or not m_b:
-        raise ValueError("m_a can't be empty" if not m_a else "m_b "
-                         "can't be empty")
+        raise ValueError("m_a can't be empty" if not m_a else "m_b can't be empty")
+
+    if not all(isinstance(row, list) for row in m_a) or not all(isinstance(row, list) for row in m_b):
+        raise TypeError("m_a and m_b must be lists of lists")
 
     if any(not row for row in m_a) or any(not row for row in m_b):
         raise ValueError("m_a and m_b cannot have empty rows")
@@ -28,7 +29,7 @@ def matrix_mul(m_a, m_b):
     rows2 = len(m_b)
     cols2 = len(m_b[0])
 
-    if cols1 != rows2 or cols2 != rows1:
+    if cols1 != rows2:
         raise ValueError("m_a and m_b can't be multiplied")
 
     if any(len(row) != cols1 for row in m_a):
@@ -53,3 +54,5 @@ def matrix_mul(m_a, m_b):
                 result[i][j] += m_a[i][k] * m_b[k][j]
 
     return result
+
+
