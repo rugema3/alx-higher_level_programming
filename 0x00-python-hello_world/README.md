@@ -27,7 +27,7 @@
 
 </ul>
 
-<h2>Shell Scripts</j2>
+<h2>Shell Scripts</h2>
 
 <ul>
 <li>Allowed editors: vi, vim, emacs</li>
