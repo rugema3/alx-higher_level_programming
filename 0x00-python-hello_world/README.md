@@ -1,6 +1,46 @@
-0x00. Python - Hello, World
+<h1>0x00. Python - Hello, World</h1>
 
-Tasks
+<h1>Resources</h1>
+<b>Read or watch:</b>
+<ul>
+<li><a href='https://intranet.alxswe.com/rltoken/JsFCs_NBzMAR7-XPAZ9BoA'>The Python tutorial (only the first three chapters below)</a></li>
+<li><a href='https://intranet.alxswe.com/rltoken/kifRlLG2iMX5AZiW8lrCMg'>Whetting Your Appetite</a>
+<li><a href='https://intranet.alxswe.com/rltoken/RVpfAuagCo9SdfYeoHd6jg'>Using the Python Interpreter</a></li>
+<li><a href='https://intranet.alxswe.com/rltoken/kifRlLG2iMX5AZiW8lrCMg'>An Informal Introduction to Python (Read up until “3.1.2. Strings” included)</a></li>
+<li><a href='https://intranet.alxswe.com/rltoken/Ju0J8BxkuPX5yKZctyKfsQ'> How To Use String Formatters in Python 3</a></li>
+<li><a href='https://intranet.alxswe.com/rltoken/szBsJ-Qyig_RrImN7RGlOg'>Learn to Program</a></li>
+<li><a href='https://intranet.alxswe.com/rltoken/tgYt-0zVy1T4sDlE9ohxnA'>Pycodestyle – Style Guide for Python Code</a></li>
+</ul>
+
+<h1>Requirements</h1>
+<h2>Python Scripts</h2>
+<ul>
+<li>Allowed editors: vi, vim, emacs</li>
+<li>All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly #!/usr/bin/python3</li>
+<li>A README.md file at the root of the repo, containing a description of the repository</li>
+<li>A README.md file, at the root of the folder of this project, is mandatory</li>
+<li>Your code should use the pycodestyle (version 2.8.*) </li>
+<li>All your files must be executable</li>
+<li>The length of your files will be tested using wc</li>
+
+</ul>
+
+<h2>Shell Scripts</j2>
+
+<ul>
+<li>Allowed editors: vi, vim, emacs</li>
+<li>All your scripts will be tested on Ubuntu 20.04 LTS</li>
+<li>All your scripts should be exactly two lines long (wc -l file should print 2)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly #!/bin/bash</li>
+<li>All your files must be executable</li>
+</ul>
+
+
+<h1>Tasks</h1>
+<pre>
 0. Run Python file
 mandatory
 Write a Shell script that runs a Python script.
@@ -218,4 +258,4 @@ GitHub repository: alx-higher_level_programming
 Directory: 0x00-python-hello_world
 File: 102-magic_calculation.py
 
-
+</pre>
