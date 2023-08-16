@@ -1,6 +1,6 @@
-/* Display the top 3 cities' temperatures during July and 
-   August ordered by temperature (descending)
-*/
+-- Display the top 3 cities' temperatures during July and 
+-- August ordered by temperature (descending)
+
 SELECT city, AVG(value) AS avg_temp
 FROM temperatures
 WHERE month = 7 OR month = 8  -- Selects records from July and August
