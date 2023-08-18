@@ -1,4 +1,6 @@
 -- List all shows and their linked genres
+
+-- Use the query to get the desired output
 SELECT
     tv_shows.title,
     tv_genres.name AS genre
