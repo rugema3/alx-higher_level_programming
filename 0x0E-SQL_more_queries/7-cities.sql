@@ -9,9 +9,8 @@ USE hbtn_0d_usa;
 
 -- Create a table cities in the selected db.
 CREATE TABLE IF NOT EXISTS cities (
-	id INT UNIQUE AUTO_INCREMENT NOT NULL,
-	name VARCHAR(256) NOT NULL,
+	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	state_id INT NOT NULL,
-	PRIMARY KEY(id),
+	name VARCHAR(256) NOT NULL,
 	FOREIGN KEY (state_id) REFERENCES states(id)
 	);
