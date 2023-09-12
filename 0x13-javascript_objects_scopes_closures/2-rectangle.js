@@ -31,8 +31,8 @@ class Rectangle {
       this.height = h;
     } else {
       /* Create an empty object if conditions are not met */
-      this.width = 0;
-      this.height = 0;
+      this.width = undefined;
+      this.height = undefined;
     }
   }
 }
