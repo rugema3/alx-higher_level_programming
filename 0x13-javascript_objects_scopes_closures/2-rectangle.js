@@ -26,13 +26,9 @@ class Rectangle {
       If either is not a positive integer or if either is 0, create an empty object.
       Otherwise, initialize the 'width' and 'height' attributes.
     */
-    if (Number.isInteger(w) && w > 0 && Number.isInteger(h) && h > 0) {
+    if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
-    } else {
-      /* Create an empty object if conditions are not met */
-      this.width = undefined;
-      this.height = undefined;
     }
   }
 }
