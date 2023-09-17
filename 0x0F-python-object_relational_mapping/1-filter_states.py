@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+A script that selects states starting with N.
+"""
+
 import MySQLdb
 import sys
 
