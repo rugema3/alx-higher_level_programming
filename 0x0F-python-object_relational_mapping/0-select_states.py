@@ -22,7 +22,8 @@ try:
     # Create a cursor object to interact with the database
     cursor = db.cursor()
 
-    # Execute an SQL query to select all rows from the 'states' table and sort them by 'id'
+    # Execute an SQL query to select all rows from the 'states'
+    # table and sort them by 'id'
     cursor.execute("SELECT * FROM states ORDER BY id")
 
     # Fetch all the results returned by the query
@@ -37,7 +38,7 @@ except MySQLdb.Error as err:
     print("Error:", err)
 
 finally:
-    # Ensure that the database connection is closed, whether or not an error occurred
+    # Ensure that the database connection is closed, whether or not an
+    # error occurred
     if 'db' in locals():
         db.close()
-
