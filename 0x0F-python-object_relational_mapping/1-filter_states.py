@@ -23,7 +23,13 @@ try:
     cursor = db.cursor()
 
     # Execute the SQL query to select states with names starting with 'N'
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
+    cursor.execute("""
+        SELECT MIN(id), name
+        FROM states
+        WHERE name LIKE 'N%'
+        GROUP BY name
+        ORDER BY MIN(id)
+    """)
 
     # Fetch all the results returned by the query
     results = cursor.fetchall()
