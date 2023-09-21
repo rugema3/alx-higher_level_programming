@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A script to print the first State object from the 
+A script to print the first State object from the
 database hbtn_0e_6_usa using SQLAlchemy.
 
 Usage:
@@ -24,7 +24,7 @@ from model_state import Base, State
 def display_first_state(username, password, database):
     """
     display the first State object from the database.
-    
+
     Args:
         username (str): MySQL username for database access.
         password (str): MySQL password for database access.
