@@ -1,4 +1,22 @@
 #!/usr/bin/python3
+"""
+A script to search for states in a MySQL database.
+
+Usage:
+    python script.py <username> <password> <database> <state_name>
+
+Arguments:
+    <username>: MySQL username for database access.
+    <password>: MySQL password for database access.
+    <database>: Name of the MySQL database to connect to.
+    <state_name>: Name of the state to search for in the 'states' table.
+
+The script connects to a MySQL server running on localhost at port 3306
+and retrieves all rows from the 'states' table where the 'name' column
+matches the provided <state_name>. The results are displayed in ascending
+order by 'id'.
+"""
+
 import MySQLdb
 import sys
 
@@ -42,7 +60,7 @@ if __name__ == "__main__":
 
     except MySQLdb.Error as err:
         # Handle any MySQL database errors and print an error message
-        print("Error:", err)
+        print("MySQL Error:", err)
 
     finally:
         # Ensure that the database connection is closed, whether or not an
