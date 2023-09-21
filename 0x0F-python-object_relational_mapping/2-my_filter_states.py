@@ -54,6 +54,10 @@ if __name__ == "__main__":
         # Fetch all the results returned by the query
         results = cursor.fetchall()
 
+        # Check if any records were found
+        if not results:
+            print(f"No records found for state '{state_name}'.")
+
         # Iterate through the results and print each row
         for row in results:
             print(row)
