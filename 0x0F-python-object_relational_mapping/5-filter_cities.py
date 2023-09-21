@@ -14,7 +14,7 @@ Arguments:
 
 The script connects to a MySQL server running on localhost at port 3306,
 retrieves all cities of the specified state from the 'cities' table,
-and displays the results in ascending order by 'cities.id'.
+and displays the city names separated by commas.
 """
 
 import MySQLdb
@@ -36,19 +36,19 @@ def list_cities_by_state(username, password, database, state_name):
 
         # Execute the SQL query using prepared statements
         cursor.execute("""
-            SELECT cities.id, cities.name
+            SELECT GROUP_CONCAT(cities.name SEPARATOR ', ')
             FROM cities
             JOIN states ON cities.state_id = states.id
             WHERE states.name = %s
             ORDER BY cities.id
         """, (state_name,))
 
-        # Fetch all the results returned by the query
-        results = cursor.fetchall()
+        # Fetch the result returned by the query
+        result = cursor.fetchone()
 
-        # Iterate through the results and print each row
-        for row in results:
-            print(row)
+        if result:
+            # Print the concatenated city names
+            print(result[0])
 
     except MySQLdb.Error as err:
         # Handle any MySQL database errors and print an error message
