@@ -20,6 +20,7 @@ order by 'id'.
 import MySQLdb
 import sys
 
+
 def search_states(username, password, database, state_name):
     try:
         # Connect to the MySQL database
@@ -60,6 +61,7 @@ def search_states(username, password, database, state_name):
         # error occurred
         if 'db' in locals():
             db.close()
+
 
 if __name__ == "__main__":
     # Check for the correct number of command-line arguments (4)
