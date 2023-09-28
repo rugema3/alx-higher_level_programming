@@ -12,7 +12,4 @@ fi
 URL="$1"
 
 # Use curl to fetch the URL and pipe the output to wc to count bytes
-response_size=$(curl -s "$URL" | wc -c)
-
-# Display the size of the response body in bytes
-echo "$response_size"
+curl -s "$URL" | wc -c
