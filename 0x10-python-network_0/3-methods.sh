@@ -1,3 +1,3 @@
 #!/bin/bash
 # Displaying all the http methods available
-curl -sI -X OPTIONS "$1" | grep -iE '^Allow:' | awk '{print $2}'
+curl -sI "$1" | grep "Allow" | cut -d " " -f 2-
