@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module: 6-6-6-6-6-6-peak
+Module: 6-peak.
 
 This module provides a function to find a peak in a list of
 unsorted integers using a divide-and-conquer approach.
@@ -8,8 +8,7 @@ unsorted integers using a divide-and-conquer approach.
 
 
 def find_peak(list_of_integers):
-    """
-    Find a peak in a list of unsorted integers using a divide-and-conquer.
+    """Find a peak in a list of unsorted integers using a divide-and-conquer.
 
     Args:
     list_of_integers (list): The list of unsorted integers.
@@ -20,7 +19,6 @@ def find_peak(list_of_integers):
     Complexity:
     O(nlog(n))
     """
-
     # Check if the list is empty
     if len(list_of_integers) == 0:
         return None
