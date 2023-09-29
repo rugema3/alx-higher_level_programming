@@ -17,29 +17,9 @@ def get_x_request_id(url):
     Args:
         url (str): The URL to fetch.
 
-    Returns:
-        str: The value of the X-Request-Id header, or
-        None if the header is not found.
     """
-    try:
-        response = requests.get(url)
-        x_request_id = response.headers.get("X-Request-Id")
-        return x_request_id
-    except requests.exceptions.RequestException as e:
-        # Handle any request-related errors
-        print("Error:", e)
-        return None
+    r = requests.get(url)
+    print(r.headers.get("X-Request-Id"))
 
-
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <URL>")
-        sys.exit(1)
-
-    url = sys.argv[1]
-    x_request_id = get_x_request_id(url)
-
-    if x_request_id:
-        print("X-Request-Id:", x_request_id)
-    else:
-        print("X-Request-Id header not found in the response.")
+if __name__ == '__main__':
+    get_e_request_id(url)
