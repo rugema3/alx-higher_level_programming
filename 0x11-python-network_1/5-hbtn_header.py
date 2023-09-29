@@ -22,4 +22,5 @@ def get_x_request_id(url):
     print(r.headers.get("X-Request-Id"))
 
 if __name__ == '__main__':
+    url = url = sys.argv[1]
     get_e_request_id(url)
