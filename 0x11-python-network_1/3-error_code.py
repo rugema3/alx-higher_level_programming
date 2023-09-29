@@ -2,8 +2,8 @@
 
 """
 A script that:
-- takes in a URL
-- sends a request to the URL
+- takes in a URL.
+- sends a request to the URL.
 - displays the body of the response (decoded in utf-8)
 - handles urllib.error.HTTPError exceptions
 """
