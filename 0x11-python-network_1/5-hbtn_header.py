@@ -2,46 +2,44 @@
 
 """
 A script that:
-- takes in a URL
-- sends a request to the URL
-- displays the value of the X-Request-Id variable in the response header
+- displays the X-Request-Id header variable of a request to a given URL
 """
 
 import sys
 import requests
 
 
-def fetch_x_request_id(url):
+def get_x_request_id(url):
     """
-    Fetches a URL and displays the value of the X-Request-Id
-    variable in the response header.
+    Fetches the specified URL and returns the value of the
+    X-Request-Id header.
 
     Args:
         url (str): The URL to fetch.
 
     Returns:
-        None
+        str: The value of the X-Request-Id header, or
+        None if the header is not found.
     """
     try:
-        # Send a GET request to the specified URL
         response = requests.get(url)
-
-        # Check if the request was successful (status code 200)
-        if response.status_code == 200:
-            # Get the value of the X-Request-Id header
-            x_request_id = response.headers.get('X-Request-Id')
-
-            if x_request_id:
-                print(x_request_id)
-            else:
-                print("X-Request-Id header not found in the response.")
-        else:
-            print("Error: HTTP Status Code", response.status_code)
+        x_request_id = response.headers.get("X-Request-Id")
+        return x_request_id
     except requests.exceptions.RequestException as e:
         # Handle any request-related errors
         print("Error:", e)
+        return None
 
 
 if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <URL>")
+        sys.exit(1)
+
     url = sys.argv[1]
-    fetch_x_request_id(url)
+    x_request_id = get_x_request_id(url)
+
+    if x_request_id:
+        print("X-Request-Id:", x_request_id)
+    else:
+        print("X-Request-Id header not found in the response.")
