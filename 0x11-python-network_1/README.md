@@ -54,7 +54,7 @@ guillaume@ubuntu:~/0x11$
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 0-hbtn_status.py</li>
-  
+<br>
 <h3>1. Response header value #0</h3>
 mandatory
 Write a Python script that takes in a URL, sends a request to the URL and displays the value of the X-Request-Id variable found in the header of the response.
@@ -64,6 +64,7 @@ Write a Python script that takes in a URL, sends a request to the URL and displa
 <li>The value of this variable is different for each request</li>
 <li>You don’t need to check arguments passed to the script (number or type)</li>
 <li>You must use a with statement</li>
+<br>
 <pre>
 guillaume@ubuntu:~/0x11$ ./1-hbtn_header.py https://alx-intranet.hbtn.io
 ade2627e-41dd-4c34-b9d9-a0fa0f47b237
@@ -72,12 +73,13 @@ guillaume@ubuntu:~/0x11$ ./1-hbtn_header.py https://alx-intranet.hbtn.io
 6593e1f5-1b4b-4c9f-9c0e-72ab525b850f
 guillaume@ubuntu:~/0x11$ 
 </pre>
+<br>
 <em>Repo:</em>
 
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 1-hbtn_header.py</li>
-  
+  <br>
 <h3>2. POST an email #0</h3>
 mandatory
 Write a Python script that takes in a URL and an email, sends a POST request to the passed URL with the email as a parameter, and displays the body of the response (decoded in utf-8)
@@ -89,17 +91,19 @@ Write a Python script that takes in a URL and an email, sends a POST request to 
 <li>You must use the with statement</li>
 <br>
 Please test your script in the sandbox provided, using the web server running on port 5000
+<br>
 <pre>
 guillaume@ubuntu:~/0x11$ ./2-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
 Your email is: hr@holbertonschool.com
 guillaume@ubuntu:~/0x11$ 
 </pre>
+<br>
 <em>Repo:</em>
 
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 2-post_email.py</li>
-  
+  <br>
 <h3>3. Error code #0</h3>
 mandatory
 Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response (decoded in utf-8).
@@ -122,12 +126,13 @@ guillaume@ubuntu:~/0x11$ ./3-error_code.py http://0.0.0.0:5000/status_500
 Error code: 500
 guillaume@ubuntu:~/0x11$ 
 </pre>
+<br>
 <em>Repo:</em>
 
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 3-error_code.py</li>
-  
+<br>
 <h3>4. What's my status? #1</h3>
 mandatory
 Write a Python script that fetches https://alx-intranet.hbtn.io/status
@@ -136,18 +141,20 @@ Write a Python script that fetches https://alx-intranet.hbtn.io/status
 <li>You are not allow to import packages other than requests</li>
 <li>The body of the response must be display like the following example (tabulation before -)</li>
 <pre>
+<br>
 guillaume@ubuntu:~/0x11$ ./4-hbtn_status.py | cat -e
 Body response:$
     - type: <class 'str'>$
     - content: OK$
 guillaume@ubuntu:~/0x11$ 
 </pre>
+<br>
 <em>Repo:</em>
 
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 4-hbtn_status.py</li>
-  
+  <br>
 <h3>5. Response header value #1</h3>
 mandatory
 Write a Python script that takes in a URL, sends a request to the URL and displays the value of the variable X-Request-Id in the response header
@@ -157,6 +164,7 @@ Write a Python script that takes in a URL, sends a request to the URL and displa
 <li>The value of this variable is different for each request</li>
 <li>You don’t need to check script arguments (number and type)</li>
 <pre>
+<br>
 guillaume@ubuntu:~/0x11$ ./5-hbtn_header.py https://alx-intranet.hbtn.io
 5e52e160-c822-4669-8b3a-8b3bbca7b090
 guillaume@ubuntu:~/0x11$ 
@@ -164,12 +172,13 @@ guillaume@ubuntu:~/0x11$ ./5-hbtn_header.py https://alx-intranet.hbtn.io
 eaceaf35-bc0f-4f74-994a-7be0728ec654
 guillaume@ubuntu:~/0x11$ 
 </pre>
+<br>
 <em>Repo:</em>
 
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 5-hbtn_header.py</li>
-  
+  <br>
 <h3>6. POST an email #1</h3>
 mandatory
 Write a Python script that takes in a URL and an email address, sends a POST request to the passed URL with the email as a parameter, and finally displays the body of the response.
@@ -179,6 +188,7 @@ Write a Python script that takes in a URL and an email address, sends a POST req
 <li>You are not allowed to import packages other than requests and sys</li>
 <li>You don’t need to error check arguments passed to the script (number or type)</li>
 Please test your script in the sandbox provided, using the web server running on port 5000
+<br>
 <pre>
 guillaume@ubuntu:~/0x11$ ./6-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
 Your email is: hr@holbertonschool.com
@@ -190,7 +200,7 @@ guillaume@ubuntu:~/0x11$
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 6-post_email.py</li>
-  
+  <br>
 <h3>7. Error code #1</h3>
 mandatory
 Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response.
@@ -219,7 +229,7 @@ guillaume@ubuntu:~/0x11$
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 7-error_code.py</li>
-  
+  <br>
 <h3>8. Search API</h3>
 mandatory
 Write a Python script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.
@@ -253,7 +263,7 @@ guillaume@ubuntu:~/0x11$
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 8-json_api.py</li>
-  
+  <br>
 <h3>9. My GitHub!</h3>
 mandatory
 Write a Python script that takes your GitHub credentials (username and password) and uses the GitHub API to display your id
@@ -264,6 +274,7 @@ Write a Python script that takes your GitHub credentials (username and password)
 <li>You must use the package requests and sys</li>
 <li>You are not allowed to import packages other than requests and sys</li>
 <li>You don’t need to check arguments passed to the script (number or type)</li>
+<br>
 <pre>
 guillaume@ubuntu:~/0x11$ ./10-my_github.py papamuziko cisfun
 2531536
@@ -277,7 +288,7 @@ guillaume@ubuntu:~/0x11$
 <li>GitHub repository: alx-higher_level_programming</li>
 <li>Directory: 0x11-python-network_1</li>
 <li>File: 10-my_github.py</li>
-  
+  <br>
 <h3>10. Time for an interview!</h3>
 #advanced
 The Holberton School staff evaluates candidates applying for a back-end position with multiple technical challenges, like this one:
