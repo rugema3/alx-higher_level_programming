@@ -163,8 +163,8 @@ Write a Python script that takes in a URL, sends a request to the URL and displa
 <li>You are not allow to import other packages than requests and sys</li>
 <li>The value of this variable is different for each request</li>
 <li>You don’t need to check script arguments (number and type)</li>
-<pre>
 <br>
+<pre>
 guillaume@ubuntu:~/0x11$ ./5-hbtn_header.py https://alx-intranet.hbtn.io
 5e52e160-c822-4669-8b3a-8b3bbca7b090
 guillaume@ubuntu:~/0x11$ 
