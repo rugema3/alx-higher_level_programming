@@ -35,7 +35,7 @@ def fetch_and_display_response(url):
         # Handle HTTP errors and print the HTTP status code
         print("Error code:", e.code)
     except urllib.error.URLError as e:
-        # Handle URL-related errors
+        # Handle URL-related errors (e.g., invalid URL)
         print("URL Error:", e)
 
 
