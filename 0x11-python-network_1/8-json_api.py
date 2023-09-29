@@ -33,15 +33,19 @@ def search_user(letter):
         # Send a POST request with the parameter
         response = requests.post(url, data=params)
 
-        # Check if the response is valid JSON and not empty
-        if response.headers.get('content-type') == 'application/json' and response.text:
-            user_data = response.json()
-            if 'id' in user_data and 'name' in user_data:
-                print("[{}] {}".format(user_data['id'], user_data['name']))
+        # Check if the response is JSON and not empty
+        if response.headers.get('content-type') == 'application/json':
+            if response.text:
+                user_data = response.json()
+                if 'id' in user_data and 'name' in user_data:
+                    print("[{}] {}".format(user_data['id'], user_data['name']))
+                else:
+                    print("No result")
             else:
-                print("No result")
+                print("Response is empty")
         else:
             print("Not a valid JSON")
+
     except requests.exceptions.RequestException as e:
         # Handle any request-related errors
         print("Error:", e)
