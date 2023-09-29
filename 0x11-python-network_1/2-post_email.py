@@ -24,16 +24,19 @@ def send_post_request(url, email):
         None
     """
     try:
-        # Encode the email parameter
-        data = urllib.parse.urlencode({'email': email}).encode('utf-8')
+        # Create a dictionary containing the email parameter
+        value = {"email": email}
+
+        # Encode the data as ASCII
+        data = urllib.parse.urlencode(value).encode("ascii")
+
+        # Create a POST request with the data
+        request = urllib.request.Request(url, data)
 
         # Send the POST request and get the response
-        with urllib.request.urlopen(url, data=data) as response:
-            # Read and decode the response body
-            body = response.read().decode('utf-8')
-
-            print("Response body:")
-            print(body)
+        with urllib.request.urlopen(request) as response:
+            # Read and decode the response body as utf-8
+            print(response.read().decode("utf-8"))
     except urllib.error.URLError as e:
         # Handle any URL-related errors
         print("Error:", e)
@@ -42,7 +45,7 @@ def send_post_request(url, email):
 if __name__ == "__main__":
     # Check if both URL and email arguments are provided
     if len(sys.argv) != 3:
-        print("Usage: ./script.py <URL> <email>")
+        print("Usage: python script.py <URL> <email>")
         sys.exit(1)
 
     url = sys.argv[1]
