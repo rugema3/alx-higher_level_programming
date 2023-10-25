@@ -9,11 +9,8 @@ if (process.argv.length !== 4) {
 const filePath = process.argv[2];
 const stringToWrite = process.argv[3];
 
-fs.writeFile(filePath, stringToWrite, 'utf8', (error) => {
+fs.writeFile(filePath, stringToWrite, (error) => {
   if (error) {
-    console.error(`An error occurred while writing to the file: ${filePath}`);
     console.error(error);
-  } else {
-    console.log(`Successfully wrote to ${filePath}`);
   }
 });
