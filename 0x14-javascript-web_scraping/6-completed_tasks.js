@@ -9,20 +9,16 @@ if (process.argv.length !== 3) {
 const apiUrl = process.argv[2];
 
 request(apiUrl, (error, response, body) => {
-  if (error) {
-    console.error(error);
-  } else if (response.statusCode === 200) {
-    const tasks = JSON.parse(body);
+  if (!error) {
+    const todos = JSON.parse(body);
+    const completed = {};
 
-    const completedTasks = tasks.reduce((completed, task) => {
-      if (task.completed) {
-        completed[task.userId] = (completed[task.userId] || 0) + 1;
+    todos.forEach((todo) => {
+      if (todo.completed) {
+        completed[todo.userId] = (completed[todo.userId] || 0) + 1;
       }
-      return completed;
-    }, {});
+    });
 
-    console.log(JSON.stringify(completedTasks, null, 2));
-  } else {
-    console.error(`Failed to retrieve task data. Status code: ${response.statusCode}`);
+    console.log(JSON.stringify(completed, null, 2));
   }
 });
