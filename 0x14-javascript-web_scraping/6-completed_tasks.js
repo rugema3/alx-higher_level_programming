@@ -1,24 +1,21 @@
 #!/usr/bin/node
 const request = require('request');
-
-if (process.argv.length !== 3) {
-  console.log('Usage: ./6-completed_tasks.js <API_URL>');
-  process.exit(1);
-}
-
-const apiUrl = process.argv[2];
-
-request(apiUrl, (error, response, body) => {
+request(process.argv[2], function (error, response, body) {
   if (!error) {
     const todos = JSON.parse(body);
-    const completed = {};
-
+    let completed = {};
     todos.forEach((todo) => {
-      if (todo.completed) {
-        completed[todo.userId] = (completed[todo.userId] || 0) + 1;
+      switch (true) {
+        case todo.completed && completed[todo.userId] === undefined:
+          completed[todo.userId] = 1;
+          break;
+        case todo.completed:
+          completed[todo.userId] += 1;
+          break;
+        default:
+          break;
       }
     });
-
-    console.log(JSON.stringify(completed, null, 2));
+    console.log(completed);
   }
 });
