@@ -6,21 +6,17 @@ if (process.argv.length !== 3) {
   process.exit(1);
 }
 
-const apiUrl = process.argv[2];
+request(process.argv[2], (error, response, body) => {
+  if (!error && response.statusCode === 200) {
+    const results = JSON.parse(body).results;
+    const characterId = 18; // Wedge Antilles character ID
 
-const characterId = 18; // Wedge Antilles character ID
-
-request(apiUrl, (error, response, body) => {
-  if (error) {
-    console.error(error);
-  } else if (response.statusCode === 200) {
-    const films = JSON.parse(body).results;
-    const count = films.reduce((total, film) => {
-      if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
-        return total + 1;
-      }
-      return total;
+    const count = results.reduce((count, movie) => {
+      return movie.characters.find((character) => character.endsWith(`/${characterId}/`))
+        ? count + 1
+        : count;
     }, 0);
+
     console.log(count);
   } else {
     console.error(`Failed to retrieve film data. Status code: ${response.statusCode}`);
